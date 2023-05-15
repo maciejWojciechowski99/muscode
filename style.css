@@ -95,3 +95,58 @@ body{
 .container__items--toDoList--mainElement--list-radio:checked {
     border: 8px solid #862583;
   }
+
+
+  .container__items--productList{
+    box-shadow: 0px 0px 2px 2px #e0e0e0;
+    margin: 20px;
+    border-radius: 2%;
+    box-sizing:border-box;
+    padding: 10px;    
+    min-width: 640px;
+}
+
+.container__items--productList--title{
+    font-weight: 500;
+    color:#333;
+}
+  
+table{
+    width: 100%;
+    border-spacing: 0px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+thead{
+    text-align: left;
+}
+
+tbody{
+    text-align: left;
+
+}
+
+tr{
+
+    border-bottom-width:10px;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+tr:hover{
+    background-color: #f5f8fa;
+}
+
+th{
+    border-bottom: 1px solid #b2b2b2;
+    padding: 3px;
+    font-weight: 500;
+    color: #333;
+
+}
+
+td{
+    border-bottom-width:10px;
+    border-bottom: 1px solid #b2b2b2;
+    padding: 3px;
+}
