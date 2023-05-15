@@ -80,3 +80,38 @@ const modalProduktPrice = document.querySelector(".modal__input--price");
 const modalProduktpromoPrice = document.querySelector(".modal__input--promoPrice");
 const modalProduktCurrency = document.querySelector(".modal__select");
 
+
+//Produkt 1
+const nameBody = document.querySelector(".product__name-js");
+const nameBodyTable = document.querySelector(".product__name-jsTable");
+const priceBody = document.querySelector(".product__price-js");
+const priceBodyTable = document.querySelector(".product__price-jsTable");
+const promoPriceBody = document.querySelector(".product__promoPrice-js");
+const promoPriceBodyTable = document.querySelector(".product__promoPrice-jsTable");
+const currencyBody = document.querySelector(".product__currency-js");
+const currencyPromoBody = document.querySelector(".product__currencyPromo-js");
+const currencyBodyTable = document.querySelector(".product__currency-jsTable");
+
+
+//Produkt 2
+const nameBodySecond = document.querySelector(".product__name-jsSecond");
+const nameBodyTableSecond = document.querySelector(".product__name-jsTableSecond");
+const priceBodySecond = document.querySelector(".product__price-jsSecond");
+const priceBodyTableSecond = document.querySelector(".product__price-jsTableSecond");
+const promoPriceBodySecond = document.querySelector(".product__promoPrice-jsSecond");
+const promoPriceBodyTableSecond = document.querySelector(".product__promoPrice-jsTableSecond");
+const currencyBodySecond = document.querySelector(".product__currency-jsSecond");
+const currencyPromoBodySecond = document.querySelector(".product__currencyPromo-jsSecond");
+const currencyBodyTableSecond = document.querySelector(".product__currency-jsTableSecond");
+
+
+//Produkt 3
+const nameBodyThird = document.querySelector(".product__name-jsThird");
+const nameBodyTableThird = document.querySelector(".product__name-jsTableThird");
+const priceBodyThird = document.querySelector(".product__price-jsThird");
+const priceBodyTableThird = document.querySelector(".product__price-jsTableThird");
+const promoPriceBodyThird = document.querySelector(".product__promoPrice-jsThird");
+const promoPriceBodyTableThird = document.querySelector(".product__promoPrice-jsTableThird");
+const currencyBodyThird = document.querySelector(".product__currency-jsThird");
+const currencyPromoBodyThird = document.querySelector(".product__currencyPromo-jsThird");
+const currencyBodyTableThird = document.querySelector(".product__currency-jsTableThird");
