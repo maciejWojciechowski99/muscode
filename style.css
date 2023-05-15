@@ -17,6 +17,10 @@ body{
     color: #384a5c;
 }
 
+.main__dark{
+    filter: blur(2px);;
+}
+
 .container__items{
     display: flex;
     flex-wrap: wrap;
