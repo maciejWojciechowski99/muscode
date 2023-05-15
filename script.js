@@ -13,15 +13,14 @@ const addElementToList = (e) => {
         const newItemValue = addElement.value;
         if(newItemValue==="") return;
         const newLi = document.createElement('li');
-        const newRadio = document.createElement('input');
-        newRadio.type = "radio";
-        newRadio.classList.add("container__items--toDoList--mainElement--list-radio")
-        newRadio.addEventListener("click", () =>{
-            counterToDoList++;
-            counter.innerHTML=counterToDoList;
-            if(toDoList.length<counterToDoList){
-                counterToDoList=toDoList.length;
-                counter.innerHTML=toDoList.length;
+        const newCheckBox = document.createElement('input');
+        newCheckBox.type = "checkbox";
+        newCheckBox.classList.add("container__items--toDoList--mainElement--list-checkBox")
+        newCheckBox.addEventListener("click", () =>{
+            if(newCheckBox.checked){
+            counter.innerHTML=++counterToDoList;
+            }else{
+                counter.innerHTML=--counterToDoList;
             }
         })
         newLi.classList.add("container__items--toDoList--mainElement--list-item");
@@ -30,7 +29,7 @@ const addElementToList = (e) => {
         toDoList.forEach(toDoElement => {
             ul.appendChild(toDoElement);
         })
-        newLi.appendChild(newRadio);
+        newLi.appendChild(newCheckBox);
         newLi.appendChild(document.createTextNode(newItemValue));
         ul.appendChild(newLi);
         addElement.value = "";
