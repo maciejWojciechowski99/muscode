@@ -34,3 +34,22 @@ const addElementToList = (e) => {
 }
 
 addElement.addEventListener("keyup", addElementToList);
+
+const modalProduct = [...document.querySelectorAll('.container__items--product')];
+
+
+const modalView = () => {
+    const modal = document.querySelector(".modal");
+    const main = document.querySelector(".main");
+    
+    main.classList.toggle("main__dark");
+    modal.classList.toggle("modal__active");
+    modalButtonCancel.addEventListener("click", () =>{
+        modal.classList.remove("modal__active");
+        main.classList.remove("main__dark");
+    });
+    
+}
+
+
+modalProduct.forEach(view => view.addEventListener('click', modalView));

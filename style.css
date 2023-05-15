@@ -186,3 +186,19 @@ img{
     color: #862583;
 }
 
+.modal{
+    display: none;
+}
+.modal__active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top:0;
+    min-width: 500px;
+    height: 100%;
+    background-color: #f5f8fa;
+    box-shadow: 0px 0px 5px 5px #e0e0e0;
+    box-sizing: border-box;
+    padding: 15px;
+}
