@@ -155,6 +155,7 @@ modalProduct[0].addEventListener("click", () =>{
     
     modalButtonSave.addEventListener('click', ()=>{
         if(!flag){
+        product1.name = modalProduktName.value;
         nameBody.innerHTML = modalProduktName.value;
         nameBodyTable.innerHTML = modalProduktName.value;
         priceBody.innerHTML = modalProduktPrice.value;
@@ -169,10 +170,11 @@ modalProduct[0].addEventListener("click", () =>{
             currencyBody.style.textDecoration="none"
             currencyBody.style.fontWeight="500";
             currencyBody.style.color="#862583";
+            promoBar.classList.remove("container__items--product--promoBar-active");
         }else{
             promoPriceCounterReset();
             promoPriceCounter();
-            promoBar.classList.toggle("container__items--product--promoBar-active");
+            promoBar.classList.add("container__items--product--promoBar-active");
             promoBarFinalPrice.textContent=+percent.toFixed(0) + "%";
             promoPriceBody.style.display="inline";
             currencyPromoBody.style.display="inline";
@@ -200,6 +202,7 @@ modalProduct[1].addEventListener("click", () =>{
     productName.innerHTML=product2.name;
     modalButtonSave.addEventListener('click', ()=>{
         if(!flag2){
+        product2.name = modalProduktName.value;
         nameBodySecond.innerHTML = modalProduktName.value;
         nameBodyTableSecond.innerHTML = modalProduktName.value;
         priceBodySecond.innerHTML = modalProduktPrice.value;
@@ -216,10 +219,12 @@ modalProduct[1].addEventListener("click", () =>{
             currencyBodySecond.style.textDecoration="none"
             currencyBodySecond.style.fontWeight="500";
             currencyBodySecond.style.color="#862583";
+            promoBarSecond.classList.remove("container__items--product--promoBar-active");
+            promoBarFinalPriceSecond.textContent="";
         }else{
             promoPriceCounterReset();
             promoPriceCounter();
-            promoBarSecond.classList.toggle("container__items--product--promoBar-active");
+            promoBarSecond.classList.add("container__items--product--promoBar-active");
             promoBarFinalPriceSecond.textContent= percent.toFixed(0) + "%";
             promoPriceBodySecond.style.display="inline";
             currencyPromoBodySecond.style.display="inline";
@@ -244,6 +249,7 @@ modalProduct[2].addEventListener("click", () =>{
     productName.innerHTML=product3.name;
     modalButtonSave.addEventListener('click', ()=>{
         if(!flag3){
+        product3.name = modalProduktName.value;
         nameBodyThird.innerHTML = modalProduktName.value;
         nameBodyTableThird.innerHTML = modalProduktName.value;
         priceBodyThird.innerHTML = modalProduktPrice.value;
@@ -259,10 +265,12 @@ modalProduct[2].addEventListener("click", () =>{
             currencyBodyThird.style.textDecoration="none"
             currencyBodyThird.style.fontWeight="500";
             currencyBodyThird.style.color="#862583";
+            promoBarThird.classList.remove("container__items--product--promoBar-active");
+            promoBarFinalPriceThird.textContent= "";
         }else{
             promoPriceCounterReset();
             promoPriceCounter();
-            promoBarThird.classList.toggle("container__items--product--promoBar-active");
+            promoBarThird.classList.add("container__items--product--promoBar-active");
             promoBarFinalPriceThird.textContent= percent.toFixed(0) + "%";
             promoPriceBodyThird.style.display="inline";
             currencyPromoBodyThird.style.display="inline";
