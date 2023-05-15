@@ -73,7 +73,7 @@ body{
 
 .container__items--toDoList--mainElement--list-item{
     padding: 4px 0 4px 0;
-    border-bottom: solid  2px #b2b2b2;
+    border-bottom: solid  1px #b2b2b2;
 }
 .container__items--toDoList--mainElement-addElement{
     width: 97%;
@@ -84,7 +84,7 @@ body{
     background: none;
     text-align: center;
     cursor: pointer;
-    border-bottom: 2px solid #b2b2b2;
+    border-bottom: 1px solid #b2b2b2;
     box-sizing: border-box;
 
 }
