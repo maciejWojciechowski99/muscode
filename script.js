@@ -33,6 +33,27 @@ const addElementToList = (e) => {
     }
 }
 
+let product1 = {
+    name: "iPhone 6s Plus 16GB",
+    salePrice: 649,
+    price: 900,
+    currency: "$"
+  };
+  
+let product2 = {
+    name: "iPad Pro 32GB",
+    salePrice: 600,
+    price: 800,
+    currency: "$"
+  };
+  
+let product3 = {
+    name: "MacBook Pro",
+    salePrice: null,
+    price: 8000,
+    currency: "PLN"
+  };
+
 addElement.addEventListener("keyup", addElementToList);
 
 const modalProduct = [...document.querySelectorAll('.container__items--product')];
