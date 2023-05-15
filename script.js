@@ -115,3 +115,29 @@ const promoPriceBodyTableThird = document.querySelector(".product__promoPrice-js
 const currencyBodyThird = document.querySelector(".product__currency-jsThird");
 const currencyPromoBodyThird = document.querySelector(".product__currencyPromo-jsThird");
 const currencyBodyTableThird = document.querySelector(".product__currency-jsTableThird");
+
+
+modalProduct[0].addEventListener("click", () =>{
+    console.log("działa?")
+    }
+);
+
+modalProduct[1].addEventListener("click", () =>{
+    flag2 = false;
+    modalImage.style.backgroundImage="url(src/img2.png)"
+    
+    const productName = document.querySelector(".modalProductName");
+    productName.innerHTML=product2.name;
+    modalButtonSave.addEventListener('click', ()=>{
+        console.log("działa?")
+    })
+});
+modalProduct[2].addEventListener("click", () =>{
+    let flag3 = false;
+    modalImage.style.backgroundImage="url(src/img3.png)"
+    const productName = document.querySelector(".modalProductName");
+    productName.innerHTML=product3.name;
+    modalButtonSave.addEventListener('click', ()=>{
+        console.log("działa?")
+    })
+})
