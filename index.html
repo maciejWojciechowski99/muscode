@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muscode App</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- roboto font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- style -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <main class="main">
     <h1 class="mainHeader">Muscode App</h1>
     <section class="container__items">
+        <!-- todo list -->
         <div class="container__items--toDoList">
             <div class="container__items--toDoList--title">
                 <p>Lista todo</p>
@@ -21,11 +24,11 @@
             </div>
             <div class="container__items--toDoList--mainElement">
                 <ul class="container__items--toDoList--mainElement--list">
-
                 </ul>
                 <input id="addElement-toDoList" class="container__items--toDoList--mainElement-addElement" placeholder="+ Dodaj nowy element checklisty" type="text">
             </div>
         </div>
+        <!-- Products table -->
         <div class="container__items--productList">
             <div class="container__items--productList--title">
                 <p>Lista Produktów</p>
@@ -67,7 +70,7 @@
                 </table>
             </div>
         </div>
-        <!-- Product1 -->
+        <!-- Product1 box -->
         <div class="container__items--product">
             <div class="container__items--product--promoBar"><span class="promoBar__finalPrice"></span></div>
             <div class="container__items--product-title">
@@ -98,7 +101,7 @@
             </div>
         </div>
         
-        <!-- Product2 -->
+        <!-- Product2 box-->
         <div class="container__items--product">
             <div class="container__items--product--promoBarSecond"><span class="promoBar__finalPriceSecond"></span></div>
             <div class="container__items--product-title">
@@ -128,7 +131,7 @@
             </div>
         </div>
 
-        <!-- Product3 -->
+        <!-- Product3 box-->
         <div class="container__items--product">
             <div class="container__items--product--promoBarThird"><span class="promoBar__finalPriceThird"></span></div>
             <div class="container__items--product-title">
@@ -159,6 +162,7 @@
         </div>
     </section>
 </main>
+    <!-- modal  -->
     <div class="modal">
         <h2 class="modal__header">Edycja produktu: <span class="modalProductName"></span></h2>
         <div class="modal__img-body">
@@ -181,9 +185,6 @@
         <input id="modalButtonCancel" class="modal__buttons-button" type="button" value="anuluj">
         </div>
     </div>
-
-
-
     <script src="script.js"></script>
 </body>
 </html>

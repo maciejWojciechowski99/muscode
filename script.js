@@ -6,6 +6,8 @@ let counterToDoList = 0;
 
 const toDoList = [];
 
+// This function add element to "todo list container when you press enter on keyboard"
+
 const addElementToList = (e) => {
     if (e.keyCode === 13) {
         const newItemValue = addElement.value;
@@ -48,25 +50,17 @@ const product_currency = null;
 
 let product1 = {
     name: "iPhone 6s Plus 16GB",
-    salePrice: 649,
-    price: 900,
-    currency: "$"
   };
   
 let product2 = {
     name: "iPad Pro 32GB",
-    salePrice: 600,
-    price: 800,
-    currency: "$"
   };
   
 let product3 = {
     name: "MacBook Pro",
-    salePrice: null,
-    price: 8000,
-    currency: "PLN"
   };
   
+// This function shows a modal element when you click on container whit the product
 
 const modalView = () => {
     const modal = document.querySelector(".modal");
@@ -82,15 +76,15 @@ const modalView = () => {
 }
 modalProduct.forEach(view => view.addEventListener('click', modalView));
 
-
-
+// linked modal HTML elements to JS
 
 const modalProduktName = document.querySelector(".modal__input--name");
 const modalProduktPrice = document.querySelector(".modal__input--price");
 const modalProduktpromoPrice = document.querySelector(".modal__input--promoPrice");
 const modalProduktCurrency = document.querySelector(".modal__select");
-
 const modalImage = document.querySelector(".modal__img-js");
+
+// linked promoBar to JS
 
 const promoBar = document.querySelector(".container__items--product--promoBar");
 const promoBarSecond = document.querySelector(".container__items--product--promoBarSecond");
@@ -99,7 +93,7 @@ const promoBarFinalPrice = document.querySelector(".promoBar__finalPrice");
 const promoBarFinalPriceSecond = document.querySelector(".promoBar__finalPriceSecond");
 const promoBarFinalPriceThird = document.querySelector(".promoBar__finalPriceThird");
 
-//Produkt 1
+// linked modal Produkt 1 to JS
 const nameBody = document.querySelector(".product__name-js");
 const nameBodyTable = document.querySelector(".product__name-jsTable");
 const priceBody = document.querySelector(".product__price-js");
@@ -111,7 +105,7 @@ const currencyPromoBody = document.querySelector(".product__currencyPromo-js");
 const currencyBodyTable = document.querySelector(".product__currency-jsTable");
 
 
-//Produkt 2
+// linked modal Produkt 2 to JS
 const nameBodySecond = document.querySelector(".product__name-jsSecond");
 const nameBodyTableSecond = document.querySelector(".product__name-jsTableSecond");
 const priceBodySecond = document.querySelector(".product__price-jsSecond");
@@ -123,7 +117,7 @@ const currencyPromoBodySecond = document.querySelector(".product__currencyPromo-
 const currencyBodyTableSecond = document.querySelector(".product__currency-jsTableSecond");
 
 
-//Produkt 3
+// linked modal Produkt 3 to JS
 const nameBodyThird = document.querySelector(".product__name-jsThird");
 const nameBodyTableThird = document.querySelector(".product__name-jsTableThird");
 const priceBodyThird = document.querySelector(".product__price-jsThird");
@@ -139,13 +133,19 @@ let flag2 = true;
 let flag3 = true;
 let percent = 0;
 
+// this function calculate a discount when you fill the "Promocyjna cena" in modal element
 function promoPriceCounter(){
     percent = (((100*modalProduktpromoPrice.value)/modalProduktPrice.value)-100);
     return percent;
 }
+
+// this function reset a discount value
+
 function promoPriceCounterReset(){
     percent = 0;
 }
+
+// this function editing product 1, when you click save button in modal view
 
 modalProduct[0].addEventListener("click", () =>{
     flag=false;
@@ -193,6 +193,8 @@ modalProduct[0].addEventListener("click", () =>{
         }
     })
 });
+
+// this function editing product 2, when you click save button in modal view
 
 modalProduct[1].addEventListener("click", () =>{
     flag2 = false;
@@ -242,6 +244,9 @@ modalProduct[1].addEventListener("click", () =>{
         }
     })
 });
+
+// this function editing product 3, when you click save button in modal view
+
 modalProduct[2].addEventListener("click", () =>{
     let flag3 = false;
     modalImage.style.backgroundImage="url(src/img3.png)"
