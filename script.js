@@ -72,5 +72,11 @@ const modalView = () => {
     
 }
 
-
 modalProduct.forEach(view => view.addEventListener('click', modalView));
+
+
+const modalProduktName = document.querySelector(".modal__input--name");
+const modalProduktPrice = document.querySelector(".modal__input--price");
+const modalProduktpromoPrice = document.querySelector(".modal__input--promoPrice");
+const modalProduktCurrency = document.querySelector(".modal__select");
+
