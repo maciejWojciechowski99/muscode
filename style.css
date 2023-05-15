@@ -4,7 +4,6 @@
     box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
 }
-
 body{
     display: flex;
     justify-content: center;
@@ -100,8 +99,7 @@ body{
     border: 8px solid #862583;
   }
 
-
-  .container__items--productList{
+.container__items--productList{
     box-shadow: 0px 0px 2px 2px #e0e0e0;
     margin: 20px;
     border-radius: 2%;
@@ -166,19 +164,19 @@ td{
     border-radius: 2%;
 }
 
-img{
-    display: block;
-    margin: 0 auto;
-    max-width: 250px;
-    max-height: 150px;
-}
-
 .container__items--product-title{
     box-sizing:border-box;
     padding: 10px;
     font-weight: 500;
     color: #333;
 
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    max-height: 150px;
 }
 
 .container__items--product-price{
@@ -205,4 +203,104 @@ img{
     box-shadow: 0px 0px 5px 5px #e0e0e0;
     box-sizing: border-box;
     padding: 15px;
+}
+
+.modal__input{
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid #b2b2b2;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.modal__select{
+    border: none;
+    background: none;
+    text-decoration: none;
+    border-bottom: 1px solid #b2b2b2;
+    margin-top: 10px;
+
+}
+
+.modal__buttons{
+    margin-left: -15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #b2b2b2;
+}
+
+.modal__buttons-button{
+    border: none;
+    padding: 5px;
+}
+
+#modalButtonSave{
+background-color: #fff;
+border: 1px solid #b2b2b2;
+}
+#modalButtonSave:hover{
+background-color: #862583;
+color: white;
+}
+
+#modalButtonCancel{
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+}
+#modalButtonCancel:hover{
+    background-color: #862583;
+    color:white;
+    
+}
+
+.modal__img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 5px 5px #e0e0e0;
+    border-radius: 50%;
+    padding: 100px 0 20px 0;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modal__img-body{
+    margin: 50px auto;
+    padding: 100px;
+    transform: translate(-50%, -50%);
+    height:200px;
+    width:100px;
+}
+
+.container__items--product--promoBar{
+    display:none;
+}
+.container__items--product--promoBar-active{
+    display:inherit;
+    position: absolute;
+    margin-left: 215px;
+    margin-top: -222px;
+    border-radius: 1px 200px;
+    transform: rotate(40deg);
+    width: 100px;
+    height: 20px;
+    background-color: #000;
+    color: white;
+}
+.promoBar__finalPrice{
+    margin: 0 auto;
+}
+.promoBar__finalPriceSecond{
+    margin: 0 auto;
+} 
+.promoBar__finalPriceThird{
+    margin: 0 auto;
 }
