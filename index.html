@@ -160,6 +160,28 @@
         </div>
     </section>
     
+    <div class="modal">
+        <h2 class="modal__header">Edycja produktu: <span class="modalProductName"></span></h2>
+        <div class="modal__img-body">
+            <div class="modal__img modal__img-js"></div>
+        </div>
+        <p>Nazwa produktu</p>
+        <input class="modal__input modal__input--name" type="text">
+        <p>Cena</p>
+        <input class="modal__input modal__input--price" type="number">
+        <p>Promocyjna cena</p>
+        <input class="modal__input modal__input--promoPrice" type="number">
+        <p>Waluta</p>
+        <select class="modal__select" name="currency">
+            <option>PLN</option>
+            <option>$</option>
+            <option>€</option>
+        </select>
+        <div class="modal__buttons">
+        <input id="modalButtonSave" class="modal__buttons-button" type="button" value="zapisz">
+        <input id="modalButtonCancel" class="modal__buttons-button" type="button" value="anuluj">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
