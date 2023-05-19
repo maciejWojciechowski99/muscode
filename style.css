@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
+    
 }
 body{
     display: flex;
@@ -14,10 +15,6 @@ body{
     background-color: #fff;
     font-size: 14px;
     color: #384a5c;
-}
-
-.main__dark{
-    filter: blur(2px);;
 }
 
 .container__items{
@@ -205,6 +202,7 @@ img{
     box-shadow: 0px 0px 5px 5px #e0e0e0;
     box-sizing: border-box;
     padding: 15px;
+    box-shadow: 0 0 0 100vw rgba(0,0,0,.5);
 }
 
 .modal__header{
